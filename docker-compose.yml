@@ -1,0 +1,9 @@
+services:
+  elevator-sim:
+    build: .
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./RunOutput:/app/RunOutput
+    environment:
+      - FLASK_ENV=production

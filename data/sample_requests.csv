@@ -1,0 +1,9 @@
+time,id,source,dest
+0,passenger1,1,51
+0,passenger2,1,37
+0,passenger3,1,25
+10,passenger4,20,1
+10,passenger5,15,60
+25,passenger6,60,1
+25,passenger7,30,10
+40,passenger8,5,45
