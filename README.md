@@ -85,7 +85,7 @@ This will download Python, install all dependencies, and start the application. 
 
 Wait until you see a line like:
 ```
-Running on http://{localhost}:5000 (eg, http://127.0.0.1:5000)
+Running on http://localhost:5000 (eg, http://127.0.0.1:5000)
 ```
 
 >Any time you edit .dockerignore or Dockerfile, run:
@@ -100,7 +100,7 @@ docker compose up
 
 Open your browser and go to:
 
-**http://{localhost}:5000/docs**
+**http://localhost:5000/docs**
 
 You will see a visual interface with all available endpoints. To run a simulation:
 1. Click **POST /simulate/upload/compare**
@@ -108,6 +108,7 @@ You will see a visual interface with all available endpoints. To run a simulatio
 3. Choose a CSV file using the file picker (format: `time,id,source,dest`)
 4. Click **Execute**
 5. Results appear in the **Response** panel below. Output files are written to `RunOutput/` inside the container (mount the volume - see CLI section above - to access them on your machine)
+6. sample files for request and failure are in **data** folder. 
 
 ---
 
